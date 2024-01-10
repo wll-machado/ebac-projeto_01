@@ -51,6 +51,7 @@ form label {
 form input {
     width: 85%;
     margin-bottom: 10px;
+    color: black;
 }
 
 form input:focus, form textarea:focus {

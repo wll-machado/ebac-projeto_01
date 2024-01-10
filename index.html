@@ -11,22 +11,23 @@
       <h2>Entre em Contato</h2>
        <form >
         <label for="name">Nome:</label>
-        <input type="text" name="name" id="name" placeholder="Nome Completo">
+        <input type="text" name="name" id="name" placeholder="Nome Completo" required>
         <label for="telefone">Telefone:</label>
-        <input type="tel" name="telefone" id="telefone" placeholder="telefone para contato">
+        <input type="tel" name="telefone" id="telefone" placeholder="(00) 0000-0000" required>
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="email" name="email" id="email" placeholder="Email" required>
         <label for="cpf">CPF:</label>
-        <input type="text" name="cpf" id="cpf" placeholder="O que você procura?">
+        <input type="text" name="cpf" class="cpf" placeholder="digite o cpf" required>
         <label for="endereco">endereço:</label>
-        <input type="text" name="endereco" placeholder="endereço completo">
+        <input type="text" name="endereco" placeholder="endereço completo" required>
         <label for="cep">CEP:</label>
-        <input type="text" name="cep" id="cep" placeholder="CEP">
+        <input type="text" name="cep" id="cep" placeholder="CEP" required>
         <button type="submit">enviar</button>
        </form>
     </main>
     
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
