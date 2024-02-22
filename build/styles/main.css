@@ -1,0 +1,2 @@
+body{background-color:rgba(46,23,250,.116)}body div{display:flex;width:100%;position:relative}body div img{width:20%;height:300px;transition:all .6s ease;position:relative;top:0;left:0}body div img:hover{z-index:999;transform:translateY(42px)}
+/*# sourceMappingURL=maps/main.css.map */
