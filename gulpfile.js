@@ -3,6 +3,7 @@ const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
 
+
 function comprimeJs(){
     return gulp.src('./source/scripts/*.js')
     .pipe(uglify())
@@ -20,22 +21,7 @@ function compilaSass(){
     .pipe(gulp.dest('./build/styles'));
 }
 
-function fDefaults(cb) {
-    console.log('funcao padrao');
-    cb();
-}
-
-function startG(cb){
-    console.log('start gulp');
-    runG();
-    cb()
-}
-
-function runG(){
-    console.log('running gulp');
-}
-
-exports.default = fDefaults;
+exports.default = gulp.parallel(compilaSass,comprimeJs);
 
 exports.sass = compilaSass;
 exports.watch = function(){
