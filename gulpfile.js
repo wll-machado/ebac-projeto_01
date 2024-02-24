@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
+// const imagemin = require('gulp-imagemin');
 
 
 function comprimeJs(){
@@ -20,6 +21,12 @@ function compilaSass(){
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./build/styles'));
 }
+
+// gulp.task('imagem', () =>
+//     gulp.src('./source/images/*')
+//     .pipe(imagemin())
+//     .pipe(gulp.dest('images'))
+// );
 
 exports.default = gulp.parallel(compilaSass,comprimeJs);
 
